@@ -1,0 +1,7 @@
+is-sim_sources
+models/bin
+models/building.coffee
+node_webkit
+.gen
+build.sh
+is-sim/locales

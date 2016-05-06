@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartBuilding - Firement Dashboard</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/app.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><span>SMART</span>BUILDING <b>EMERGENCY</b></a>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 sidebar" style="background: #f1f4f7">
+
+
+        <div style="padding: 10px; background: #EEE; cursor: pointer">
+            <h5 style="text-transform:uppercase">Building in Fire</h5>
+
+
+            <div class="panel panel-one panel-widget" style="margin-bottom: 0">
+	            <div class="row no-padding">
+		            <div class="col-lg-3 panel-left" style="height: 75px">
+			            <i class="fa fa-building fa-3x"></i>
+		            </div>
+		            <div class="col-lg-9 panel-right" style="height: 75px">
+			            <div class="large">NUMA</div>
+			            <div class="text-muted">39 Rue du Caire, 75002 Paris</div>
+		            </div>
+	            </div>
+            </div>
+
+        </div>
+
+        <div style="padding: 10px">
+            <h5 style="text-transform:uppercase; color: #999">Buildings nearby the incident</h5>
+        </div>
+
+        <div class="hidden-building">
+
+            <div class="panel panel-one panel-widget" style="margin-bottom: 0">
+	            <div class="row no-padding">
+		            <div class="col-lg-3 panel-left" style="height: 75px">
+			            <i class="fa fa-coffee fa-3x"></i>
+		            </div>
+		            <div class="col-lg-9 panel-right" style="height: 75px">
+			            <div class="large">Bitcoin cafe</div>
+			            <div class="text-muted">54 Rue Corolis, Paris</div>
+		            </div>
+	            </div>
+            </div>
+
+        </div>
+
+        <div class="hidden-building">
+
+            <div class="panel panel-one panel-widget" style="margin-bottom: 0">
+	            <div class="row no-padding">
+		            <div class="col-lg-3 panel-left" style="height: 75px">
+			            <i class="fa fa-shopping-bag fa-3x"></i>
+		            </div>
+		            <div class="col-lg-9 panel-right" style="height: 75px">
+			            <div class="large">Shopping NM</div>
+			            <div class="text-muted">54 Rue Corolis, Paris</div>
+		            </div>
+	            </div>
+            </div>
+
+        </div>
+
+        <div class="hidden-building">
+
+            <div class="panel panel-one panel-widget" style="margin-bottom: 0">
+	            <div class="row no-padding">
+		            <div class="col-lg-3 panel-left" style="height: 75px">
+			            <i class="fa fa-hotel fa-3x"></i>
+		            </div>
+		            <div class="col-lg-9 panel-right" style="height: 75px">
+			            <div class="large">Hotel Roi</div>
+			            <div class="text-muted">54 Rue Corolis, Paris</div>
+		            </div>
+	            </div>
+            </div>
+
+        </div>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-home"></i></a></li>
+				<li class="active">NUMA</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row" style="padding-top: 20px">
+			<div class="col-sm-3">
+				<div class="panel panel-two panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 panel-left">
+							<i class="fa fa-user fa-3x"></i>
+						</div>
+						<div class="col-sm-9 col-lg-7 panel-right">
+							<div class="large" id="total_people">0</div>
+							<div class="text-muted">People inside</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+			<div class="col-sm-3">
+				<div class="panel panel-four panel-widget ">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 panel-left">
+							<i class="fa fa-fire fa-3x"></i>
+						</div>
+						<div class="col-sm-9 col-lg-7 panel-right">
+							<div class="large" id="floor_fire">No fire</div>
+							<div class="text-muted">Fire location</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="panel panel-three panel-widget ">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 panel-left">
+							<i class="fa fa-fire-extinguisher fa-3x"></i>
+						</div>
+						<div class="col-sm-9 col-lg-7 panel-right">
+							<div class="large">5</div>
+							<div class="text-muted">Fire hydrants</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="panel panel-one panel-widget ">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 panel-left">
+							<i class="fa fa-warning fa-3x"></i>
+						</div>
+						<div class="col-sm-9 col-lg-7 panel-right">
+							<div class="large">No gas</div>
+							<div class="text-muted">In building</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+        <h4 style="text-transform: uppercase">Floor detail</h4>
+
+		<div class="row" id="floors"></div><!--/.row-->
+		<div class="col-sm-3" style="display:none" id="floor_template">
+			<div class="panel panel-default floor_x_background">
+				<div class="panel-body easypiechart-panel">
+					<h4 class="floor_x_title">Template Floor</h4>
+                    <div style="padding: 10px">
+					    <ul class="list-group">
+                            <li class="list-group-item">
+                            Temperature
+                            <span class="label label-default floor_x_temp">20</span>
+                            </li>
+                            <li class="list-group-item">
+                            Number of people
+                            <span class="label label-default floor_x_number">0</span>
+                            </li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger btn-sm btn_x_images" data-toggle="modal" data-target="#myModal" style="display:none">
+                          Watch live images
+                        </button>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4 style="text-transform: uppercase">Building plan</h4>
+                <a href="plan.jpg" target="_blank"><img src="img/plan.jpg" class="img-responsive img-rounded" alt="Responsive image"></a>
+            </div>
+            <div class="col-lg-6">
+                <h4 style="text-transform: uppercase">City Map</h4>
+
+                <div>
+
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active"><a href="#location" aria-controls="home" role="tab" data-toggle="tab">Location</a></li>
+                    <li role="presentation"><a href="#navigation" aria-controls="profile" role="tab" data-toggle="tab">Real-time Navigation</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="location">
+                        <iframe width="100%" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6dCYFRdu5kcRDkI00fBnqiM&key=AIzaSyCuoulHKSn24y92z97_eYH43Fr5ESsxDZo" allowfullscreen></iframe>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="navigation">
+                        <iframe width="100%" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJX7jpxA1y5kcR1wsd_78XfkI&destination=place_id:ChIJF3gPMTxu5kcRXq_G1Qe3FRc&key=AIzaSyCuoulHKSn24y92z97_eYH43Fr5ESsxDZo" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                </div>
+                
+            </div>
+		</div><!--/.row-->
+							
+			
+	</div>	<!--/.main-->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Images from the rooms</h4>
+          </div>
+          <div class="modal-body">
+            <p><img src="img/smoke.jpg"  class="img-responsive" /></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/spinalcore.browser.js"></script>
+    <script type="text/javascript" src="../models/is-sim.models.js"></script>
+    <script type="text/javascript" src="../models/building.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
